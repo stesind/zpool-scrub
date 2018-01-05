@@ -12,7 +12,7 @@ systemctl daemon-reload
 systemctl enable --now zpool-scrub@<POOLNAME>.timer
 ```
 Replace &lt;POOLNAME&gt; with the name of your pool.
-Keep in mind that the path is /sbin/zpool in Ubuntu. On Arch Linux it is /usr/sbin/zpool. One has to change the service file accordingly if not used in Ubuntu. If you are unsure about the location, use:
+Keep in mind that the path is /sbin/zpool in Ubuntu. On Arch Linux it is /usr/sbin/zpool. One has to change the service file accordingly if not used in Ubuntu. If you are unsure about the location, find out using:
   ```sh
   which zpool
   ```
