@@ -11,7 +11,7 @@ install -m 644 -o root -g root zpool-scrub@.timer /etc/systemd/system
 systemctl daemon-reload
 systemctl enable --now zpool-scrub@<POOLNAME>.timer
 ```
-Replace <POOLNAME> with the name of your pool.
+Replace &lt;POOLNAME&gt; with the name of your pool.
 Keep in mind that the path is /sbin/zpool in Ubuntu. On Arch Linux it is /usr/sbin/zpool. One has to change the service file accordingly if not used in Ubuntu. If you are unsure about the location, use:
   ```sh
   which zpool
