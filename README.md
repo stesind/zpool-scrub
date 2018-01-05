@@ -8,8 +8,8 @@ Service and Timer for zpool scrub on Ubuntu
 git clone https://github.com/stesind/zpool-scrub-weekly.git
 cd zpool-scrub-weekly
 
-install -m 644 -o root -g root zpool-scrub@.service /etc/systemd/system
-install -m 644 -o root -g root zpool-scrub@.timer /etc/systemd/system
+sudo install -m 644 -o root -g root zpool-scrub@.service /etc/systemd/system
+sudo install -m 644 -o root -g root zpool-scrub@.timer /etc/systemd/system
 
 sudo systemctl daemon-reload
 sudo systemctl enable --now zpool-scrub@<POOLNAME>.timer
