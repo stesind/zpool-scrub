@@ -3,7 +3,7 @@ Service and Timer for zpool scrub on Ubuntu
 
 ## Install on Ubuntu
 - Clone this repository, change into the directory zpool-scrub-weekly
-- Install timer and service file in /etc/systemd/system using:
+- Install and enable timer and service file in /etc/systemd/system using:
 ```sh
 install -m 644 -o root -g root zpool-scrub@.service /etc/systemd/system
 install -m 644 -o root -g root zpool-scrub@.timer /etc/systemd/system
