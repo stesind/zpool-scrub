@@ -5,9 +5,5 @@ After=zfs.target
 
 [Service]
 Type=oneshot
-# Arch Linux:
-#ExecStartPre=-/usr/bin/zpool scrub -s %i
-#ExecStart=/usr/bin/zpool scrub %i
-# Ubuntu:
-ExecStartPre=-/sbin/zpool scrub -s %i
-ExecStart=/sbin/zpool scrub %i
+ExecStartPre=-/usr/bin/env zpool scrub -s %i
+ExecStart=/usr/bin/env zpool scrub %i
